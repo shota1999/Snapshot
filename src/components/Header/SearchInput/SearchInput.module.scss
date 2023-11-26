@@ -1,0 +1,76 @@
+.container {
+  height: 45px;
+  display: flex;
+  align-items: center;
+
+  > input {
+    width: 398px;
+    height: 100%;
+    padding-left: 1em;
+    border: 3px solid #d7dbdf;
+    background-color: #edeff0;
+    outline: none;
+    border-right: none;
+  }
+
+  > button {
+    height: 53px;
+    background-color: #051c33;
+    color: white;
+    width: 62px;
+    border: none;
+    outline: none;
+    border-radius: 0 0.35em 0.35em 0;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.imagesContainer > img {
+  width: 200px;
+}
+
+.disabledButton {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .container {
+    height: 35px;
+    > input {
+      width: 240px;
+    }
+    > button {
+      height: 43px;
+      width: 50px;
+    }
+  }
+
+}
+@media  (max-width: 320px) {
+  .container {
+    height: 15px;
+    > input {
+      width: 140px;
+    }
+    > button {
+      height: 23px;
+      width: 30px;
+    }
+    .icon{
+      font-size: 10px;
+    }
+  }
+
+}
+@media (max-width: 240px) {
+ .container{
+  > input {
+    width: 80px;
+  }
+ }
+}
